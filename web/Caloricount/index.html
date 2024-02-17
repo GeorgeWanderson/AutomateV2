@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Calorias</title>
+    <link rel="stylesheet" href="/web/Caloricount/assets/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contador de Calorias</h1>
+        <div class="input-section">
+            <input type="text" id="foodInput" placeholder="Digite o alimento" oninput="autoComplete()" list="foodSuggestions">
+            <datalist id="foodSuggestions"></datalist>
+
+            <input type="number" id="caloriesInput" placeholder="Digite as calorias">
+            <button onclick="addFood()">Adicionar</button>
+        </div>
+        <ul id="foodList"></ul>
+        <div id="totalCalories">Total de calorias: 0</div>
+    </div>
+    <script src="/web/Caloricount/assets/script.js"></script>
+</body>
+</html>
