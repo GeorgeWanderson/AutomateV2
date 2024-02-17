@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Produtos
     const products = [
-        { id: 1, name: 'Produto 1', price: 20 },
-        { id: 2, name: 'Produto 2', price: 30 },
-        { id: 3, name: 'Produto 3', price: 25 },
+        { id: 1, name: 'Playstation 5', price: 20 },
+        { id: 2, name: 'Iphone 15 PRO MAX', price: 30 },
+        { id: 3, name: 'Notebook I5', price: 25 },
         // Adicione mais produtos conforme necessário
     ];
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const productDiv = document.createElement('div');
         productDiv.classList.add('product');
         productDiv.innerHTML = `
-            <img src="product${product.id}.jpg" alt="${product.name}">
+        <img src="/web/LetsBuy/assets/img/iphone.jpg" alt="${product.name}">
             <h3>${product.name}</h3>
             <p>R$ ${product.price.toFixed(2)}</p>
             <button onclick="addToCart(${product.id}, '${product.name}', ${product.price})"><i class="fas fa-cart-plus"></i> Adicionar ao Carrinho</button>
