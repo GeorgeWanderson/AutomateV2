@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/login.css">
+    <title>Automate - Login</title>
+</head>
+<body>
+    <header>
+        <a class="header-back" href="../index.html">&#9665; Voltar</a>
+    </header>
+
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" id="username" name="username" placeholder="Insira o nome de usuário" required>
+                <span class="error-message" id="username-error"></span> <!-- Mensagem de erro para o campo de usuário -->
+            </div>
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Insira sua senha" required>
+                <span class="error-message" id="password-error"></span> <!-- Mensagem de erro para o campo de senha -->
+            </div>
+            <button type="button" onclick="login()">Login</button>
+        </form>
+        <p><a href="/web/reset-password.html">Esqueci minha senha</a></p> <!-- Link "Esqueci minha senha" -->
+        <p>Não é cadastrado? <a href="/web/register.html">Realize seu cadastro agora!</a></p>
+    </div>
+
+    <!-- Adicione este HTML após a tag <form> -->
+    <div id="successSnackbar" class="snackbar"></div>
+    <div id="errorSnackbar" class="snackbar"></div>
+
+    <script src="/src/scripts/login.js"></script>
+</body>
+</html>

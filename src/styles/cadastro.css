@@ -1,0 +1,173 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: orangered;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o header fique acima do conteúdo */
+    display: flex;
+    justify-content: space-between; /* Alinha o conteúdo nas extremidades */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+}
+
+.header-back {
+    color: white; /* Cor do texto branco */
+    font-weight: bold; /* Texto em negrito */
+    text-decoration: none; /* Remover sublinhado */
+    margin-left: 10px; /* Margem à esquerda para separar do canto */
+}
+
+.header-title {
+    color: white; /* Cor do texto branco */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Página de Cadastro */
+.register-container {
+    max-width: 400px;
+    margin: 100px auto; /* Aumentado para evitar que o header sobreponha o conteúdo */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: orangered; /* Laranja para o botão */
+    border: none;
+    border-radius: 5px;
+    color: white; /* Texto branco */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(211, 56, 0, 0.947);
+}
+
+p {
+    text-align: center;
+}
+
+.error-message {
+    display: block;
+    color: #ff0000; /* Vermelho para mensagem de erro */
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Snackbar */
+.snackbar {
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #4CAF50; /* Verde para sucesso */
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    visibility: hidden; /* Modificado para não exibir o modal inicialmente */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.snackbar.error {
+    background-color: #f44336; /* Vermelho para erro */
+}
+
+.snackbar.show {
+    visibility: hidden; /* Modificado para não exibir o modal inicialmente */
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+/* Modal */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Permanece fixo enquanto rola */
+    z-index: 1; /* Ficar no topo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Habilitar rolagem quando necessário */
+    background-color: rgba(0,0,0,0.4); /* Cor de fundo escura */
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centralize no meio */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largura do conteúdo */
+}
+
+/* Fechar botão */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
