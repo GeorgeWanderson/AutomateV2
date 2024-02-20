@@ -63,7 +63,7 @@ body {
 .controls button {
     padding: 10px 20px;
     margin: 0 10px;
-    background-color: #28a745;
+    background-color: #0E4B6E;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -71,7 +71,7 @@ body {
 }
 
 .controls button:hover {
-    background-color: #218838;
+    background-color: #6DC6EB;
 }
 
 .dark-mode {

@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Automate V2 - Projetos</title>
-    <link rel="shortcut icon" href="/src/img/automate-favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/src/img/automate-favicon-colorido.png" type="image/x-icon">
     <link rel="stylesheet" href="/src/styles/projects.css">
 </head>
+
 <body>
+    <header>
+        <a class="header-back" href="../index.html">&#9665; Voltar</a>
+    </header>
 
-<header>
-    <h1>Automate - Projetos</h1>
-</header>
+    <div class="background">
+        <div class="container">
+            <h1 id="welcome-text">Automate - Projects</h1>
 
-<div class="container">
-    <div class="button-section">
-        <button onclick="window.location.href='http://127.0.0.1:5500/web/ourhistory/'">CRUD - HISTÓRIAS</button>
-        <button onclick="window.location.href='http://127.0.0.1:5500/web/ourhistory/'">CONTADOR DE CALORIAS</button>
-        <button onclick="window.location.href='http://127.0.0.1:5500/web/letsbuy/'">LET'S BUY!</button>
+            <div class="button-section">
+                <button id="btn-crud" onclick="window.location.href='http://127.0.0.1:5500/web/ourhistory/'">CRUD -
+                    HISTÓRIAS</button>
+                <button id="btn-calories"
+                    onclick="window.location.href='http://127.0.0.1:5500/web/ourhistory/'">CONTADOR DE CALORIAS</button>
+                <button id="btn-letsbuy" onclick="window.location.href='http://127.0.0.1:5500/web/letsbuy/'">LET'S
+                    BUY!</button>
+            </div>
+        </div>
     </div>
-</div>
 
+    <script src="/src/scripts/typeEffect.js"></script>
 </body>
 </html>

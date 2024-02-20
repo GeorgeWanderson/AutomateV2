@@ -5,16 +5,20 @@ body {
 }
 
 .background {
-    background-image: url('/src/img/background-img-orange.jpg'); /* Imagem background */
+    background-image: url('/src/img/background.webp'); /* Imagem background */
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
-    opacity: 0.8;
+    opacity: 0.9;
+}
+
+.background h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .content {
@@ -31,7 +35,7 @@ body {
 }
 
 header {
-    background-color: orangered;
+    background-color: #0E4B6E;
     color: white;
     padding: 15px 0;
     position: fixed;
@@ -56,9 +60,9 @@ nav ul li a {
     color: white;
     font-weight: bold;
     font-size: 1.2em;
-    transition: color 0.3s ease; /* Adicionando uma transição de cor */
+    transition: color 0.3s ease; 
 }
 
 nav ul li a:hover {
-    color: #9d2a00; /* Cor ao passar o mouse sobre o link */
+    color: #6DC6EB;
 }

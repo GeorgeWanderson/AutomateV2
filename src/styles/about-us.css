@@ -6,22 +6,22 @@ body {
 }
 
 header {
-    background-color: orangered;
+    background-color: #0E4B6E;;
     padding: 10px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Garante que o header fique acima do conteúdo */
+    z-index: 1000; 
     display: flex;
-    justify-content: space-between; /* Alinha o conteúdo nas extremidades */
-    align-items: center; /* Alinha verticalmente o conteúdo */
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .header-back {
-    color: white; /* Cor do texto branco */
-    font-weight: bold; /* Texto em negrito */
-    text-decoration: none; /* Remover sublinhado */
-    margin-left: 10px; /* Margem à esquerda para separar do canto */
+    color: white; 
+    font-weight: bold; 
+    text-decoration: none; 
+    margin-left: 10px; 
 }
 
 .header-title {
@@ -39,17 +39,17 @@ header h1 {
     margin: 120px auto 50px; /* Ajusta a margem para evitar sobreposição com o header */
     padding: 20px;
     background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #6DC6EB;
     text-align: justify;
     border-radius: 8px;
 }
 
 .quemsomos-container h1 {
-    color: #333;
+    color: #0E4B6E;
 }
 
 .quemsomos-container h2 {
-    color: #0070c9;
+    color: #0E4B6E;
     margin-top: 20px;
 }
 

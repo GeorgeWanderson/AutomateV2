@@ -7,7 +7,7 @@ body {
 
 /* Header */
 header {
-    background-color: orangered;
+    background-color: #0E4B6E;
     padding: 10px;
     position: fixed;
     top: 0;
@@ -37,7 +37,7 @@ header {
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #6DC6EB;
 }
 
 h1 {
@@ -64,7 +64,7 @@ input[type="password"] {
 button {
     width: 100%;
     padding: 10px;
-    background-color: orangered; /* Laranja para o botão */
+    background-color: #0E4B6E;;
     border: none;
     border-radius: 5px;
     color: white; /* Texto branco */
@@ -73,7 +73,7 @@ button {
 }
 
 button:hover {
-    background-color: rgba(211, 56, 0, 0.947);
+    background-color: #6DC6EB;
 }
 
 p {

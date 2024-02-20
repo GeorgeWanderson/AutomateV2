@@ -1,4 +1,3 @@
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,37 +6,36 @@ body {
 
 /* Header */
 header {
-    background-color: orangered;
+    background-color: #0E4B6E;
     padding: 10px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Garante que o header fique acima do conteúdo */
+    z-index: 1000; 
     display: flex;
-    justify-content: space-between; /* Alinha o conteúdo nas extremidades */
-    align-items: center; /* Alinha verticalmente o conteúdo */
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .header-back {
-    color: white; /* Cor do texto branco */
-    font-weight: bold; /* Texto em negrito */
-    text-decoration: none; /* Remover sublinhado */
-    margin-left: 10px; /* Margem à esquerda para separar do canto */
+    color: white; 
+    font-weight: bold; 
+    text-decoration: none; 
+    margin-left: 10px; 
 }
 
 .header-title {
-    color: white; /* Cor do texto branco */
-    font-weight: bold; /* Texto em negrito */
+    color: white; 
+    font-weight: bold; 
 }
 
-/* Página de Esqueci Minha Senha */
 .reset-password-container {
     max-width: 400px;
-    margin: 100px auto; /* Aumentado para evitar que o header sobreponha o conteúdo */
+    margin: 100px auto; 
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #6DC6EB;
 }
 
 h1 {
@@ -63,16 +61,16 @@ input[type="email"] {
 button {
     width: 100%;
     padding: 10px;
-    background-color: orangered; /* Laranja para o botão */
+    background-color: #0E4B6E;
     border: none;
     border-radius: 5px;
-    color: white; /* Texto branco */
+    color: white; 
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: rgba(211, 56, 0, 0.947);
+    background-color: #6DC6EB;
 }
 
 p {
