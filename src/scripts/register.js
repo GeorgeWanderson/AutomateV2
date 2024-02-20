@@ -31,7 +31,7 @@ function register() {
 
     // Validar o nome completo (não deve conter números inteiros)
     if (/^\d+$/.test(fullName)) {
-        document.getElementById("fullName-error").innerText = "O nome é inválido";
+        document.getElementById("fullName-error").innerText = "O nome é inválido (não deve conter números inteiros)";
         return;
     } else {
         document.getElementById("fullName-error").innerText = "";
@@ -47,7 +47,7 @@ function register() {
 
     // Validar a idade (deve estar entre 18 e 65)
     if (age < 18 || age > 65) {
-        document.getElementById("age-error").innerText = "A idade não atende aos critérios do sistema";
+        document.getElementById("age-error").innerText = "A idade não atende aos critérios do sistema (18 a 65 anos)";
         return;
     } else {
         document.getElementById("age-error").innerText = "";
@@ -98,8 +98,17 @@ function showSuccessSnackbar(message) {
     snackbar.innerText = message;
     snackbar.className = "snackbar show"; // Adiciona a classe show para exibir o modal
 
+    var textWidth = snackbar.offsetWidth; // Largura do texto
+    snackbar.style.marginLeft = "-" + (textWidth / 2) + "px"; // Ajuste do margin-left para centralizar o snackbar
+
     setTimeout(function() {
         snackbar.className = snackbar.className.replace("show", ""); // Remove a classe show após 3 segundos
+        // Exibe a mensagem do segundo snackbar após 3 segundos
+        snackbar.innerText = "Redirecionando para a página de login...";
+        snackbar.className = "snackbar show"; // Adiciona a classe show para exibir o modal
+        setTimeout(function() {
+            snackbar.className = snackbar.className.replace("show", ""); // Remove a classe show após 3 segundos
+        }, 3000);
     }, 3000);
 }
 
@@ -108,7 +117,6 @@ document.addEventListener("DOMContentLoaded", function() {
     registerForm.addEventListener("submit", function(event) {
         event.preventDefault(); // Evita que o formulário seja enviado
 
-        // Chama a função register() para processar o cadastro
         register();
     });
 });
