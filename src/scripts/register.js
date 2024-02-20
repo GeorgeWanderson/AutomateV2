@@ -1,4 +1,23 @@
-// Função para realizar o cadastro de usuário
+var usuarios = [];
+
+function loadUsuarios() {
+    var usuariosJson = localStorage.getItem('usuarios');
+    if (usuariosJson) {
+        usuarios = JSON.parse(usuariosJson);
+    }
+}
+
+// Função para salvar os usuários no armazenamento (simulado por um array em JSON)
+function saveUsuarios() {
+    var usuariosJson = JSON.stringify(usuarios);
+    localStorage.setItem('usuarios', usuariosJson);
+}
+
+function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+}
+
 function register() {
     // Obter os valores dos campos de entrada
     var fullName = document.getElementById("fullName").value;
@@ -7,6 +26,8 @@ function register() {
     var email = document.getElementById("email").value;
     var address = document.getElementById("address").value;
     var password = document.getElementById("password").value;
+
+    loadUsuarios();
 
     // Validar o nome completo (não deve conter números inteiros)
     if (/^\d+$/.test(fullName)) {
@@ -58,21 +79,17 @@ function register() {
         password: password
     };
 
-    localStorage.setItem('currentUser', JSON.stringify(user));
+    usuarios.push(user);
+    saveUsuarios();
 
     // Exibir mensagem de sucesso
+    console.log("Cadastro efetuado com sucesso!");
     showSuccessSnackbar("Cadastro efetuado com sucesso!");
 
     // Redirecionar para a página de dashboard após 7 segundos
     setTimeout(function() {
-        window.location.href = "/web/dashboard.html";
+        window.location.href = "/web/login.html";
     }, 7000);
-}
-
-// Função para validar o formato do e-mail
-function validateEmail(email) {
-    var re = /\S+@\S+\.\S+/;
-    return re.test(email);
 }
 
 // Função para exibir um snackbar de sucesso
@@ -85,3 +102,13 @@ function showSuccessSnackbar(message) {
         snackbar.className = snackbar.className.replace("show", ""); // Remove a classe show após 3 segundos
     }, 3000);
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    var registerForm = document.getElementById("registerForm");
+    registerForm.addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita que o formulário seja enviado
+
+        // Chama a função register() para processar o cadastro
+        register();
+    });
+});

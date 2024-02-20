@@ -6,12 +6,27 @@ body {
 }
 
 header {
-    background-color: #ff7f0e; /* Cor laranja */
-    padding: 25px 0;
+    background-color: orangered;
+    padding: 10px;
     position: fixed;
     top: 0;
     width: 100%;
-    text-align: center;
+    z-index: 1000; /* Garante que o header fique acima do conteúdo */
+    display: flex;
+    justify-content: space-between; /* Alinha o conteúdo nas extremidades */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+}
+
+.header-back {
+    color: white; /* Cor do texto branco */
+    font-weight: bold; /* Texto em negrito */
+    text-decoration: none; /* Remover sublinhado */
+    margin-left: 10px; /* Margem à esquerda para separar do canto */
+}
+
+.header-title {
+    color: white; /* Cor do texto branco */
+    font-weight: bold; /* Texto em negrito */
 }
 
 header h1 {

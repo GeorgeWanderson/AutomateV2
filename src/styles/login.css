@@ -84,7 +84,7 @@ a {
     color: #007bff;
 }
 
-/* Snackbar */
+/* Snackbar de sucesso */
 .snackbar {
     visibility: hidden;
     min-width: 250px;
@@ -98,18 +98,27 @@ a {
     z-index: 1;
     left: 50%;
     bottom: 30px;
+    font-size: 17px;
 }
 
+.snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 1.5s;
+    animation: fadein 0.5s, fadeout 0.5s 1.5s;
+}
+
+/* Snackbar de erro */
 .snackbar.error {
     background-color: #f44336; /* Vermelho para erro */
 }
 
-.snackbar.show {
+.snackbar.error.show {
     visibility: visible;
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
+/* Animations */
 @-webkit-keyframes fadein {
     from {bottom: 0; opacity: 0;}
     to {bottom: 30px; opacity: 1;}

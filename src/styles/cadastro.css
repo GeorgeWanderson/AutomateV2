@@ -112,7 +112,7 @@ p {
 }
 
 .snackbar.show {
-    visibility: hidden; /* Modificado para não exibir o modal inicialmente */
+    visibility: visible; /* Modificado para não exibir o modal inicialmente */
 }
 
 @-webkit-keyframes fadein {
