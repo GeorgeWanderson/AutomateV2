@@ -1,39 +1,36 @@
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Header */
 header {
     background-color: #0E4B6E;
     padding: 10px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Garante que o header fique acima do conteúdo */
+    z-index: 1000; 
     display: flex;
-    justify-content: space-between; /* Alinha o conteúdo nas extremidades */
-    align-items: center; /* Alinha verticalmente o conteúdo */
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .header-back {
-    color: white; /* Cor do texto branco */
-    font-weight: bold; /* Texto em negrito */
-    text-decoration: none; /* Remover sublinhado */
-    margin-left: 10px; /* Margem à esquerda para separar do canto */
+    color: white; 
+    font-weight: bold; 
+    text-decoration: none; 
+    margin-left: 10px; 
 }
 
 .header-title {
-    color: white; /* Cor do texto branco */
-    font-weight: bold; /* Texto em negrito */
+    color: white; 
+    font-weight: bold;
 }
 
-/* Página de Login */
 .login-container {
     max-width: 400px;
-    margin: 100px auto; /* Aumentado para evitar que o header sobreponha o conteúdo */
+    margin: 100px auto; 
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 5px;
@@ -67,7 +64,7 @@ button {
     background-color: #0E4B6E;;
     border: none;
     border-radius: 5px;
-    color: white; /* Texto branco */
+    color: white; 
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -84,12 +81,11 @@ a {
     color: #007bff;
 }
 
-/* Snackbar de sucesso */
 .snackbar {
     visibility: hidden;
     min-width: 250px;
     margin-left: -125px;
-    background-color: #4CAF50; /* Verde para sucesso */
+    background-color: #4CAF50; 
     color: #fff;
     text-align: center;
     border-radius: 2px;
@@ -107,9 +103,8 @@ a {
     animation: fadein 0.5s, fadeout 0.5s 1.5s;
 }
 
-/* Snackbar de erro */
 .snackbar.error {
-    background-color: #f44336; /* Vermelho para erro */
+    background-color: #f44336; 
 }
 
 .snackbar.error.show {
@@ -118,7 +113,6 @@ a {
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
-/* Animations */
 @-webkit-keyframes fadein {
     from {bottom: 0; opacity: 0;}
     to {bottom: 30px; opacity: 1;}
@@ -139,10 +133,9 @@ a {
     to {bottom: 0; opacity: 0;}
 }
 
-/* Mensagens de erro */
 .error-message {
     display: block;
-    color: #ff0000; /* Vermelho para mensagem de erro */
+    color: #ff0000; 
     font-size: 12px;
     margin-top: 5px;
 }
