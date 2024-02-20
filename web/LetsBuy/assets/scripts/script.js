@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Produtos
     const products = [
-        { id: 1, name: 'Playstation 5', price: 20 },
+        { id: 1, name: 'Iphone 15 PRO 128GB', price: 20 },
         { id: 2, name: 'Iphone 15 PRO MAX', price: 30 },
-        { id: 3, name: 'Notebook I5', price: 25 },
+        { id: 3, name: 'Iphone 15 PRO 256GB', price: 55 },
         // Adicione mais produtos conforme necessário
     ];
 
