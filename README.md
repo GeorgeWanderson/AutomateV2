@@ -1,31 +1,42 @@
-# Automated Testing Playground
+<h1>Playground de Testes Automatizados 🤖</h1>
 
-Welcome to the Automated Testing Playground repository! This repository serves as a hands-on platform for practicing automation testing techniques using HTML files.
+<p>Bem-vindo(a) ao repositório do Playground de Testes Automatizados! Este repositório serve como uma plataforma prática para praticar técnicas de teste de automação usando arquivos HTML.</p>
 
-## Getting Started
+<h2>Primeiros Passos 🚶‍♂️</h2>
 
-To get started with exploring and practicing automated testing, simply clone this repository to your local machine:
+<p>Para começar a explorar e praticar o teste automatizado, simplesmente clone este repositório para a sua máquina local:</p>
 
-```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-```
+<pre><code>git clone https://github.com/GeorgeWanderson/AutomateV2.git
+</code></pre>
 
-Then, navigate to the cloned repository directory and open any HTML file in your preferred browser to begin interacting with testing elements.
+<p>Depois, navegue até o diretório do repositório clonado e abra qualquer arquivo HTML no seu navegador preferido para começar a interagir com os elementos de teste.</p>
 
-## Contributing
+<h2>Regras de cada Funcionalidade:</h2>
+<ul>
+<li><a href="https://github.com/GeorgeWanderson/AutomateV2/blob/main/regras/cadastro.md">Cadastro</a> 🌟</li>
+<li><a href="https://github.com/GeorgeWanderson/AutomateV2/blob/main/regras/login.md">Login</a> 📖</li>
+<li><a href="https://github.com/GeorgeWanderson/AutomateV2/blob/main/regras/caloricount.md">CaloriCount</a> 📖</li>
+<li><a href="https://github.com/GeorgeWanderson/AutomateV2/blob/main/regras/letsbuy.md">Let's Buy!</a> 📖</li>
+<li><a href="https://github.com/GeorgeWanderson/AutomateV2/blob/main/regras/storyFeed.md">StoryFeed</a> 📖</li>
+<li><a href="#">Esqueci minha senha <strong>(Indisponível)</strong></a> 🌐</li>
+</ul>
 
-We welcome contributions from the community to enhance this learning platform. If you have HTML files, tutorials, or insights to share, feel free to open a pull request. Together, we can make automated testing more accessible and enjoyable for everyone.
+<h2>Contribuindo 🤝</h2>
 
-## Resources
+<p>Nós damos as boas-vindas a contribuições da comunidade para enriquecer esta plataforma de aprendizado. Se você tem arquivos HTML, tutoriais ou insights para compartilhar, sinta-se livre para abrir um pull request. Juntos, podemos tornar o teste automatizado mais acessível e prazeroso para todos.</p>
 
-Check out the resources below to further expand your knowledge of automated testing:
+<h2>Recursos 📚</h2>
 
-- [Awesome Automated Testing](https://github.com/atinfo/awesome-test-automation)
-- [Selenium WebDriver Documentation](https://www.selenium.dev/documentation/en/)
-- [Cypress Documentation](https://docs.cypress.io/)
+<p>Confira os recursos abaixo para expandir ainda mais o seu conhecimento em teste automatizado:</p>
 
-## License
+<ul>
+<li><a href="https://github.com/atinfo/awesome-test-automation">Awesome Automated Testing</a> 🌟</li>
+<li><a href="https://www.selenium.dev/documentation/pt-br/">Documentação do Selenium WebDriver</a> 📖</li>
+<li><a href="https://docs.cypress.io/">Documentação do Cypress</a> 🌐</li>
+</ul>
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+<h2>Licença 📄</h2>
 
-Happy testing!
+<p>Este projeto está licenciado sob a Licença MIT - veja o arquivo <a href="LICENSE">LICENSE</a> para detalhes.</p>
+
+<p>Feliz testagem! 🎈</p>
